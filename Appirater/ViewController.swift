@@ -12,6 +12,16 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        Appirater.appLaunched(true)
+        Appirater.setAppId("1234")
+        Appirater.setDaysUntilPrompt(3)
+        Appirater.setUsesUntilPrompt(3)
+        Appirater.setSignificantEventsUntilPrompt(-1)
+        Appirater.setTimeBeforeReminding(3)
+        Appirater.setDebug(true)
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 
